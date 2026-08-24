@@ -1,4 +1,6 @@
 # DeskPenguin 🐧
+<img width="133" height="213" alt="Screenshot 2026-08-25 at 12 53 11 AM" src="https://github.com/user-attachments/assets/8bc33258-9e2a-41f5-9d4c-b0bc3e2e961d" />
+
 
 A cute, gently animated penguin that lives on your desktop. It waddles around your screen on its own, blinks softly, and pops out a tiny keyboard to tap along whenever you're typing — then settles back down when you're done. Drag it anywhere with your mouse, and it remembers where you left it next time you open it.
 
