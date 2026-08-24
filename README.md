@@ -1,43 +1,46 @@
-# DeskCat 🐈
+# DeskPenguin 🐧
 
-A tiny animated cat that lives on your desktop — frameless, always-on-top,
-and draggable anywhere on screen. No image assets required: the cat is
-drawn live with Qt's `QPainter`, so it's a single lightweight Python file.
+A cute, gently animated penguin that lives on your desktop. It waddles around your screen on its own, blinks softly, and pops out a tiny keyboard to tap along whenever you're typing — then settles back down when you're done. Drag it anywhere with your mouse, and it remembers where you left it next time you open it.
 
-Inspired by the idea behind [yumiaura/myCat](https://github.com/yumiaura/myCat),
-built from scratch as an original implementation.
+Built with **Python** and **PySide6**.
+
+Inspired by the idea behind [yumiaura/myCat](https://github.com/yumiaura/myCat), built from scratch as an original implementation.
+
+## Download
+
+🔗 **[Download DeskPenguin on itch.io](https://shreyajainnx.itch.io/deskpenguin)**
+
+macOS only for now (Apple Silicon recommended).
 
 ## Features
 
-- Frameless, transparent, always-on-top overlay window
-- Idle animation: blinking eyes + a gently swaying tail
-- Left-click and drag to move the cat anywhere
-- Right-click for a menu: change color, quit
-- Remembers its last position between runs (`~/.config/deskcat/config.ini`)
+- Idle waddling and blinking animations
+- Reacts to typing with a tiny animated keyboard
+- Drag-and-drop repositioning — remembers where you left it
+- Lightweight desktop companion, runs quietly in the background
 
-## Install & run
+## Installation (from download)
+
+1. Download `DeskPenguin.app.zip` from the [itch.io page](https://shreyajainnx.itch.io/deskpenguin) and unzip it.
+2. Move `DeskPenguin.app` to your Applications folder (or run it directly).
+3. Right-click the app and choose **Open** to bypass the unidentified-developer warning (only needed once).
+4. To enable the typing reaction, go to **System Settings → Privacy & Security → Accessibility** and enable DeskPenguin.
+
+## Running from source
 
 ```bash
+git clone https://github.com/shreyajainnx09/DeskPenguin.git
+cd DeskPenguin
 pip install -r requirements.txt
-python main.py
+python penguin_main.py
 ```
 
-### Options
+## Requirements
 
-```bash
-python main.py --pos 800 400        # start at a specific screen position
-python main.py --color "#d18a3f"    # start with a ginger cat
-```
-
-## Roadmap ideas
-
-- [ ] Swap the procedural drawing for real sprite-sheet skins (like the
-      original myCat's GIF-based skins)
-- [ ] Add a reminder feature — cat carries a little banner across the screen
-- [ ] Package as a standalone `.exe` / `.app` with PyInstaller
-- [ ] Publish to PyPI so it installs with `pip install deskcat`
-- [ ] Add a simple local-LLM chat mode via Ollama, like the original project
+- Python 3.9+
+- PySide6
+- pynput (optional — for typing detection)
 
 ## License
 
-MIT
+LGPLv3
